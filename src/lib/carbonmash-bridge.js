@@ -20,3 +20,4 @@ export function loadToolData() {
     setTimeout(() => { window.removeEventListener('message', handler); resolve(null); }, 5000);
   });
 }
+
