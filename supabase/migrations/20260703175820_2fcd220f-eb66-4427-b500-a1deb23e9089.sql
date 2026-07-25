@@ -1,0 +1,2 @@
+ALTER TABLE public.projects ADD COLUMN IF NOT EXISTS review_stage text;
+COMMENT ON COLUMN public.projects.review_stage IS 'Approval stage while an approval is in flight: admin_triage | manager_review | admin_final';
