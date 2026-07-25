@@ -1,3 +1,20 @@
+// index.tsx — paste this block at the very top
+
+const script = document.createElement('script');
+script.src = 'https://carbonmash.com/carbonmash-bridge.js';
+document.head.appendChild(script);
+
+// ----------- rest of your existing index.tsx below -----------
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import {
